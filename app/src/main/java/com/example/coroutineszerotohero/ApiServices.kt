@@ -11,7 +11,7 @@ import retrofit2.http.Path
 
 interface ApiServices {
 
-    @GET("/api/a83e4dcabe9e4d1014d42c002c3f977b/search({name}")
+    @GET("/api/a83e4dcabe9e4d1014d42c002c3f977b/search/{name}")
    suspend fun getSuperheroes(@Path("name") superheroName:String): Response<SuperHeroDataResponse>
 }
 
